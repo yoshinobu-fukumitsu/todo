@@ -10,10 +10,10 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: checkout
-   uses: actions/checkout@v2
+    uses: actions/checkout@v2
    - name: Install dependencies
-   run: npm install
+    run: npm install
    - name: Run unit tests
-   run: npm test
-   env:
-    SQLITE_DB_LOCATION: /tmp/todo.db
+    run: npm test
+    env:
+     SQLITE_DB_LOCATION: /tmp/todo.db
